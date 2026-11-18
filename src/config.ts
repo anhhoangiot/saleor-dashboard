@@ -7,6 +7,8 @@ import {
   type Pagination,
 } from "./types";
 
+/** Max checkout line quantity; mirrors saleor's MAX_LINE_QUANTITY_HINT (saleor/site/models.py). */
+export const MAX_LINE_QUANTITY_HINT = 50;
 export const getAppDefaultUri = () => "/";
 export const getAppMountUri = () => window?.__SALEOR_CONFIG__?.APP_MOUNT_URI || getAppDefaultUri();
 export const getStaticUrl = () => {
